@@ -1,29 +1,24 @@
-.contenedor {
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    display: grid;
-    grid-template-columns: minmax(30px, 300px) 150px minmax(60px, 250px);
-    grid-template-rows: repeat(3, auto);
-    place-content: center;
-    
-    /* cuantas columnas va tener y de que ancho va ser cada uno */
-    /* grid-template-columns: 100px 200px 300px; */
-
-    /* tamaño de cada fila */
-    /* grid-template-rows: 100px 200px; */
-
-
-    /* define que tamaño va tener cualquier fila, en caso de no saber el tamaño exacto de cada fila */
-    /* grid-auto-columns: 100px; */
-
-
-    /* crea nuevas columnas cada que aparezcan mas, por defecto se crea 1 fila */
-    /* grid-auto-flow: column; */
-
-    /* espacio entre filas o columnas(row-gap column-gap) o ambos gap */
+*{
+    font-family: 'Reboto', 'sans-serif';
 }
 
-.item {
-    border: 5px solid #00bcd4;
-    font-size: 2rem; 
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 400px;
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info{
+ align-self: center;
 }
