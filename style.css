@@ -1,6 +1,9 @@
 .contenedor {
     border: 5px solid #e1bee7;
     background-color: white;
+    display: grid;
+    /* cuantas columnas va tener y de que ancho va ser cada uno */
+    grid-template-columns: 100px 200px 300px;
 }
 
 .item {
@@ -8,7 +11,7 @@
     font-size: 4rem;
 }
 
-.item-1 {
+/* .item-1 {
     border: 5px solid #f8bbd0;
     background-color: #ffeeff;
     grid-area: header;
@@ -24,4 +27,4 @@
     border: 5px solid #b2ebf2;
     background-color: #e5ffff;
     grid-area: main;
-}
+} */
