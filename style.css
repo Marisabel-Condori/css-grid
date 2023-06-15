@@ -1,42 +1,50 @@
 .contenedor {
     border: 5px solid #e1bee7;
-    background-color: #fff1ff;
+    background-color: white;
     display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+    
     /* cuantas columnas va tener y de que ancho va ser cada uno */
     /* grid-template-columns: 100px 200px 300px; */
 
     /* tamaño de cada fila */
-    grid-template-rows: 100px 200px;
+    /* grid-template-rows: 100px 200px; */
+
 
     /* define que tamaño va tener cualquier fila, en caso de no saber el tamaño exacto de cada fila */
-    grid-auto-columns: 100px;
+    /* grid-auto-columns: 100px; */
+
 
     /* crea nuevas columnas cada que aparezcan mas, por defecto se crea 1 fila */
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
 
     /* espacio entre filas o columnas(row-gap column-gap) o ambos gap */
-    gap: 15px;
 }
 
 .item {
-    border: 5px solid #00bcd4;
-    font-size: 4rem;
+    font-size: 4rem; 
 }
 
-/* .item-1 {
+.item-1 {
     border: 5px solid #f8bbd0;
     background-color: #ffeeff;
-    grid-area: header;
+    /* grid-area: header; */
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .item-2 {
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
-    grid-area: side;
+    /* grid-area: side; */
+    grid-row: 2/4;
 }
 
 .item-3 {
     border: 5px solid #b2ebf2;
     background-color: #e5ffff;
-    grid-area: main;
-} */
+    /* grid-area: main; */
+    grid-area: 2/2 /4/4;
+}
