@@ -4,8 +4,12 @@
     display: grid;
     /* cuantas columnas va tener y de que ancho va ser cada uno */
     grid-template-columns: 100px 200px 300px;
+
     /* tamaño de cada fila */
-    grid-template-rows: 150px 250px;
+    /* grid-template-rows: 150px 250px; */
+
+    /* define que tamaño va tener cualquier fila, en caso de no saber el tamaño exacto de cada fila */
+    grid-auto-rows: 150px;
 }
 
 .item {
