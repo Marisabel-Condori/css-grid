@@ -1,18 +1,21 @@
 .contenedor {
     border: 5px solid #e1bee7;
-    background-color: white;
+    background-color: #fff1ff;
     display: grid;
     /* cuantas columnas va tener y de que ancho va ser cada uno */
-    grid-template-columns: 100px 200px 300px;
+    /* grid-template-columns: 100px 200px 300px; */
 
     /* tamaño de cada fila */
-    /* grid-template-rows: 150px 250px; */
+    grid-template-rows: 100px 200px;
 
     /* define que tamaño va tener cualquier fila, en caso de no saber el tamaño exacto de cada fila */
-    grid-auto-rows: 150px;
+    grid-auto-columns: 100px;
 
-    /* crea nuevas columnas cada que aparezcan mas */
+    /* crea nuevas columnas cada que aparezcan mas, por defecto se crea 1 fila */
     grid-auto-flow: column;
+
+    /* espacio entre filas o columnas(row-gap column-gap) o ambos gap */
+    gap: 15px;
 }
 
 .item {
